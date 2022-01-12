@@ -28,9 +28,7 @@ makeBtn.addEventListener("click", function(event){
                 <h5 class="card-title">${templateHeader}</h5>
                 <p class="card-text">${templateDescription}</p>
                 <p class="card-text">
-                    <a class="bookmarklet btn btn-secondary" data-toggle="tooltip" data-placement="top" title="" href="${templateBookmarkCode}" data-original-title="Træk dette link til din bogmærkelinje i Chrome" data-aria-hidden-tab-index="" tabindex="-1">${templateButtonText}</a>
-                    ${videoButton}
-                </p>
+                    <a class="bookmarklet btn btn-secondary" data-toggle="tooltip" data-placement="top" title="" href="${templateBookmarkCode}" data-original-title="Træk dette link til din bogmærkelinje i Chrome" data-aria-hidden-tab-index="" tabindex="-1">${templateButtonText}</a> ${videoButton}</p>
                 <div class="collapse" id="${templateID}-video">
                     <h5>Se hvordan du benytter denne bookmarklet</h5>
                     <p><a href="${templateVideo}" data-aria-hidden-tab-index="" tabindex="-1">se video</a></p>
@@ -53,7 +51,7 @@ makeBtn.addEventListener("click", function(event){
 `;
    
     targetArea.value = templateText;
-    $('.container').append(templateText);
+    $('body').append(templateText);
 });
 
 var videoCheckbox = document.querySelector("#showVideo");
