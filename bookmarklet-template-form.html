@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="generator" class="container">
 
         <h2>Bookmarklet html template generator</h2>
         <p>Ved hjælp af denne formular kan du automatisk lave den Bootstrap HTML, der skal benyttes til
@@ -78,11 +78,14 @@
                         <label for="coderesult">HTML til Kopiering</label>
                         <textarea class="form-control" id="coderesult" rows="6"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary pull-right mt-20">Lav html</button>
+                    <button id="copyBtn" class="btn btn-primary pull-right mt-20">Kopier html</button>
+                    <small id="copyMessage" class="text-success"></small>
                 </div>
             </div>
         </form>
-
+        <div class="row">
+            <div id="example" class="col-md-12"></div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
